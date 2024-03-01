@@ -15,5 +15,8 @@
  */
 
 export default function functionLength(fn) {
-    throw 'Not implemented';
+
+    let val = fn.length;
+    return val;
+    
 }
