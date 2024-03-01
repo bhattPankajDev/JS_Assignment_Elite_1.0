@@ -20,5 +20,11 @@
  */
 
 export default function makeCounter(initialValue = 0) {
-    throw 'Not implemented';
+    let counter = initialValue;
+    function helperCounter(){
+        let temp = counter;
+        counter+=1;
+        return temp;
+    }
+    return helperCounter;
 }
